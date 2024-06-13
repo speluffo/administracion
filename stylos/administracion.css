@@ -1,0 +1,110 @@
+/* administracion.css */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu-container {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+.hero {
+    background-image: url('Imágenes/ciudad/ciudad1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.services, .contact {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2, .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services ul, .contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li, .contact li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
