@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Imágenes/logo.png" alt="Logo de la Administración de Consorcio">
+            </div>
+            <div class="menu-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="administracion.html">Administración</a></li>
+                        <li><a href="mandatario.html">Mandatario</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de los siguientes medios:</p>
+                <ul>
+                    <li>Email: info@administraciondeconsorcio.com</li>
+                    <li>Teléfono: (123) 456-7890</li>
+                    <li>Dirección: Calle Falsa 123, Ciudad, País</li>
+                </ul>
+                <h2>Envíanos un Mensaje</h2>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <h2>Contáctanos por Mensaje de Texto o WhatsApp</h2>
+                <div class="contact-options">
+                    <a href="sms:+1234567890" class="contact-icon">
+                        <img src="Imágenes/sms-icon.png" alt="Enviar mensaje de texto">
+                        <span>Enviar SMS</span>
+                    </a>
+                    <a href="https://wa.me/1234567890" class="contact-icon">
+                        <img src="Imágenes/whatsapp-icon.png" alt="Enviar mensaje de WhatsApp">
+                        <span>Enviar WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+                <h2>Ubicación</h2>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Administración de Consorcio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function initMap() {
+            var location = { lat: -34.397, lng: 150.644 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+        window.onload = initMap;
+    </script>
+</body>
+</html>

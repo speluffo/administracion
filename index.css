@@ -1,0 +1,91 @@
+body {
+    background-image: url('Imágenes/ciudad/ciudad4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    align-self: flex-start;
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.menu-container {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
