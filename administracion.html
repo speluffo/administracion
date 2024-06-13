@@ -6,6 +6,26 @@
     <title>Página de Administración</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="administracion.css">
+    <style>
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .services ul li img {
+            margin-right: 15px;
+            width: 30px; /* Adjust the size as needed */
+            height: 30px; /* Adjust the size as needed */
+        }
+        .services ul li ul li {
+            display: list-item;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,47 +63,62 @@
                 <h2>Nuestros Servicios</h2>
                 <ul>
                     <li>
-                        Mantenimiento preventivo
-                        <ul>
-                            <li>Revisión periódica de sistemas eléctricos y de plomería: Asegura que no haya problemas eléctricos o de plomería que puedan causar inconvenientes mayores.</li>
-                            <li>Inspección y mantenimiento de ascensores: Verifica el funcionamiento seguro y eficiente de los ascensores.</li>
-                            <li>Supervisión de sistemas de calefacción y aire acondicionado: Garantiza que los sistemas de climatización funcionen correctamente y con eficiencia energética.</li>
-                            <li>Limpieza y mantenimiento de áreas comunes: Mantiene las áreas compartidas en condiciones óptimas y agradables.</li>
-                            <li>Control y prevención de plagas: Implementa medidas para prevenir infestaciones y mantener un ambiente saludable.</li>
-                        </ul>
+                        <img src="Imágenes/mantenimiento.png" alt="Mantenimiento preventivo">
+                        <div>
+                            <strong>Mantenimiento preventivo</strong>
+                            <ul>
+                                <li>Revisión periódica de sistemas eléctricos y de plomería: Asegura que no haya problemas eléctricos o de plomería que puedan causar inconvenientes mayores.</li>
+                                <li>Inspección y mantenimiento de ascensores: Verifica el funcionamiento seguro y eficiente de los ascensores.</li>
+                                <li>Supervisión de sistemas de calefacción y aire acondicionado: Garantiza que los sistemas de climatización funcionen correctamente y con eficiencia energética.</li>
+                                <li>Limpieza y mantenimiento de áreas comunes: Mantiene las áreas compartidas en condiciones óptimas y agradables.</li>
+                                <li>Control y prevención de plagas: Implementa medidas para prevenir infestaciones y mantener un ambiente saludable.</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        Tratamiento de deudores
-                        <ul>
-                            <li>Gestión de cobros: Implementamos estrategias eficaces para la recuperación de deudas.</li>
-                            <li>Negociación y acuerdos: Facilitamos acuerdos de pago con deudores para evitar conflictos legales.</li>
-                            <li>Acciones legales: En caso necesario, iniciamos procedimientos legales para asegurar el cumplimiento de las obligaciones de pago.</li>
-                        </ul>
+                        <img src="Imágenes/deudores.png" alt="Tratamiento de deudores">
+                        <div>
+                            <strong>Tratamiento de deudores</strong>
+                            <ul>
+                                <li>Gestión de cobros: Implementamos estrategias eficaces para la recuperación de deudas.</li>
+                                <li>Negociación y acuerdos: Facilitamos acuerdos de pago con deudores para evitar conflictos legales.</li>
+                                <li>Acciones legales: En caso necesario, iniciamos procedimientos legales para asegurar el cumplimiento de las obligaciones de pago.</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        Liquidación de expensas
-                        <ul>
-                            <li>Elaboración de presupuestos: Creamos presupuestos detallados y transparentes para la correcta distribución de las expensas.</li>
-                            <li>Reparto equitativo: Aseguramos que las expensas se distribuyan de manera justa entre los copropietarios.</li>
-                            <li>Informe mensual: Proveemos informes mensuales detallados sobre el estado de las expensas y el uso de los fondos.</li>
-                        </ul>
+                        <img src="Imágenes/expensas.png" alt="Liquidación de expensas">
+                        <div>
+                            <strong>Liquidación de expensas</strong>
+                            <ul>
+                                <li>Elaboración de presupuestos: Creamos presupuestos detallados y transparentes para la correcta distribución de las expensas.</li>
+                                <li>Reparto equitativo: Aseguramos que las expensas se distribuyan de manera justa entre los copropietarios.</li>
+                                <li>Informe mensual: Proveemos informes mensuales detallados sobre el estado de las expensas y el uso de los fondos.</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        Asesoramiento legal
-                        <ul>
-                            <li>Consultoría en normativas: Ofrecemos asesoría sobre las leyes y regulaciones aplicables a los consorcios.</li>
-                            <li>Redacción de contratos: Ayudamos en la creación y revisión de contratos y acuerdos legales.</li>
-                            <li>Representación legal: Proporcionamos representación legal en disputas y litigios relacionados con el consorcio.</li>
-                        </ul>
+                        <img src="Imágenes/legal.png" alt="Asesoramiento legal">
+                        <div>
+                            <strong>Asesoramiento legal</strong>
+                            <ul>
+                                <li>Consultoría en normativas: Ofrecemos asesoría sobre las leyes y regulaciones aplicables a los consorcios.</li>
+                                <li>Redacción de contratos: Ayudamos en la creación y revisión de contratos y acuerdos legales.</li>
+                                <li>Representación legal: Proporcionamos representación legal en disputas y litigios relacionados con el consorcio.</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        Y más...
-                        <ul>
-                            <li>Servicios de contabilidad: Llevamos un control exhaustivo de las finanzas del consorcio.</li>
-                            <li>Asistencia técnica: Proveemos soporte técnico para la resolución de problemas en las instalaciones.</li>
-                            <li>Organización de reuniones: Facilitamos la organización de reuniones y asambleas de copropietarios.</li>
-                            <li>Atención personalizada: Ofrecemos atención personalizada para resolver cualquier inquietud de los copropietarios.</li>
-                        </ul>
+                        <img src="Imágenes/mas.png" alt="Y más...">
+                        <div>
+                            <strong>Y más...</strong>
+                            <ul>
+                                <li>Servicios de contabilidad: Llevamos un control exhaustivo de las finanzas del consorcio.</li>
+                                <li>Asistencia técnica: Proveemos soporte técnico para la resolución de problemas en las instalaciones.</li>
+                                <li>Organización de reuniones: Facilitamos la organización de reuniones y asambleas de copropietarios.</li>
+                                <li>Atención personalizada: Ofrecemos atención personalizada para resolver cualquier inquietud de los copropietarios.</li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
