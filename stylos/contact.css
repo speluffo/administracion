@@ -5,26 +5,36 @@
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-info h1, .contact-info h2 {
-    color: #333;
+    color: #f6f8f2;
 }
 
 .contact-info p, .contact-info li {
     font-size: 18px;
-    color: #666;
+    color: #e7dada;
 }
 
 .contact-icon {
     display: flex;
+    width: 100px;
+    height: 100px;
+
     align-items: center;
     text-decoration: none;
     color: #333;
 }
 
 .contact-icon img {
-    width: 50px;
+    width: 90px;
     margin-right: 10px;
 }
 
@@ -40,7 +50,7 @@
 }
 
 .qr-item {
-    margin: 10px;
+    margin: 40px;
 }
 
 .qr-item img {
