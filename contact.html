@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="stylos/contact.css">
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+   
 </head>
 <body>
     <header>
@@ -87,20 +87,5 @@
             <p>&copy; 2024 Administración de Consorcio. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        function initMap() {
-            var location = { lat: -34.397, lng: 150.644 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 8,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-        window.onload = initMap;
-    </script>
 </body>
 </html>
