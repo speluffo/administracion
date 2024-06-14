@@ -19,7 +19,14 @@ app.post('/send-email', (req, res) => {
             user: 'speluffo23@gmail.com', // Aquí tu dirección de correo Gmail
             pass: '14151602elias' // Aquí tu contraseña
         }
+        res.send('¡El mensaje ha sido enviado!');
+    });// Iniciar el servidor
+    
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+        console.log(`Servidor iniciado en el puerto ${PORT}`);
     });
+
 
     // Configurar el correo electrónico
     const mailOptions = {
