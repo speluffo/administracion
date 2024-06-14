@@ -1,107 +1,75 @@
 /* mandatario.css */
-body {
-    background-color: #f9f9f9;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.menu-container {
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 38px;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #45a049;
-}
-
-.hero {
-    background-image: url('Imágenes/ciudad/mandatario fondo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero .container {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin: 0 0 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin: 10px 0;
-}
 
 .services, .contact {
-    background-color: white;
     padding: 50px 20px;
     text-align: center;
 }
 
 .services h2, .contact h2 {
     font-size: 36px;
+    color: rgb(22, 22, 22);
+    margin-bottom: 20px;
+}
+
+.services h3, .contact h3 {
+    font-size: 36px;
+    color: rgb(22, 22, 22);
+    margin-bottom: 20px;
+}
+
+.services h3 p, .contact h3 p{
+    font-size: 36px;
+    color: rgb(235, 225, 225);
     margin-bottom: 20px;
 }
 
 .services ul, .contact ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(51, 94, 158);
 }
 
-.services li, .contact li {
+.services ul li, .contact ul li {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 10px;
+    flex: 0 0 calc(25% - 20px); /* Tres columnas con margen */
+    text-align: center;
 }
 
-.services ul ul {
+.services ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services ul li img {
+    width: 350px; /* Tamaño de las imágenes */
+    height: 150px;
+}
+
+.services ul li p {
     margin-top: 10px;
-    padding-left: 20px;
-    list-style: disc;
+    color: rgb(255, 255, 255);
+}
+
+.services ul.tramites li {
+    flex: 0 0 calc(25% - 20px); /* Dos columnas con margen */
+    display: flex;
+    align-items: center;
+}
+
+.services ul.tramites li i {
+    margin-right: 0px;
+    font-size: 72px; /* Tamaño del ícono */
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
     position: fixed;

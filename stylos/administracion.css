@@ -1,4 +1,18 @@
+body {
+    background-image: url('Imágenes/Design3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .logo {
     align-self: flex-start;
@@ -27,13 +41,13 @@ nav li {
 }
 
 nav a {
-    color: #333333;
+    color: #333;
     text-decoration: none;
     font-size: 38px;
 }
 
 nav a:hover {
-    color: #666666;
+    color: #666;
 }
 
 .hero {
