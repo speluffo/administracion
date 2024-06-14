@@ -25,6 +25,19 @@
             margin: 20px 0;
             border: 0;
         }
+        .qr-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .qr-item {
+            text-align: center;
+            margin: 10px;
+        }
+        .qr-item img {
+            width: 150px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -59,19 +72,37 @@
                 </ul>
                 <h2>Envíanos un Mensaje por WhatsApp</h2>
                 <a href="https://wa.me/+5491154612133" class="contact-icon">
-                    <img src="Imágenes/whatsapp.png" alt="Enviar mensaje de WhatsApp" style="width: 150px; height: auto;">
+                    <img src="Imágenes/WhatsappFOTO.png" alt="Enviar mensaje de WhatsApp" style="width: 150px; height: auto;">
                     <span>Enviar WhatsApp</span>
                 </a>
-                <h2>Escaneame y te paso mi contacto</h2>
-                <a href="sms:+5491154612133" class="contact-icon">
-                    <img src="Imágenes/qrjd.png" alt="Enviar mensaje de texto" style="width: 150px; height: auto;">
-                    <span>Enviar SMS</span>
-                </a>
+                
                 <h2>Contáctanos VCard</h2>
                 <a href="contacto.vcf" download="contacto.vcf" class="contact-icon">
-                    <img src="Imágenes/vcard.png" alt="Descargar vCard" style="width: 150px; height: auto;">
+                    <img src="Imágenes/vcardFOTO.png" alt="Descargar vCard" style="width: 150px; height: auto;">
                     <span>Descargar vCard</span>
                 </a>
+                
+            </div>
+            <div>
+                <h2>Escaneame y te paso mi contacto</h2>
+                <div class="qr-container">
+                    <div class="qr-item">
+                        <img src="Imágenes/Whatsapp.png" alt="QR Code 1">
+                        <p>QR WATSAPP</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="Imágenes/vcard.png" alt="QR Code 2">
+                        <p>QR VCARD CONTACTO</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="Imágenes/MAIL.png" alt="QR Code 3">
+                        <p>QR MAIL</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="Imágenes/Mapa.png" alt="QR Code 4">
+                        <p>QR MAPA</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="map">
@@ -79,11 +110,6 @@
                 <h2>Ubicación</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6461213140545!2d-58.55680148482234!3d-34.66858708044581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb78fd46c5d9%3A0x2e37c9f3c301302!2sCallao%202132%2C%20B1768AOV%20Ciudad%20Madero%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sus!4v1625664822132!5m2!1ses!2sus" allowfullscreen="" loading="lazy"></iframe>
             </div>
-
-
-
-
-            
         </section>
     </main>
 

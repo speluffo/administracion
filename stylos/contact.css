@@ -155,3 +155,21 @@ footer {
     margin: auto;
     padding: 0 20px;
 }
+
+}
+.qr-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.qr-item {
+    text-align: center;
+    margin: 10px;
+}
+.qr-item img {
+    width: 150px;
+    height: auto;
+    color: white;
+}
+
+
