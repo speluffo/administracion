@@ -4,9 +4,7 @@ body {
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
-    position: relative; /* Make sure body is relative for the animated background */
-    overflow: hidden; /* Prevent scrollbars caused by the animated background */
-}
+  }
 
 .video-bg {
     position: fixed;
@@ -14,9 +12,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
-    z-index: -1; /* Coloca el video detrás del contenido principal */
-}
+  }
 
 
 .container {
@@ -24,8 +20,6 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    z-index: 1; /* Make sure content is above the animated background */
-
 }
 
 .logo {
