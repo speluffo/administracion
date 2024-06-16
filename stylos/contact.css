@@ -25,17 +25,20 @@
 
 .contact-icon {
     display: flex;
-    width: 100px;
-    height: 100px;
-
     align-items: center;
     text-decoration: none;
     color: #333;
+    margin: 10px 0;
 }
 
 .contact-icon img {
     width: 90px;
     margin-right: 10px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.contact-icon img:hover {
+    transform: scale(1.3); /* Agranda la imagen a 130% de su tamaño original */
 }
 
 .qr-section {
@@ -56,6 +59,11 @@
 .qr-item img {
     width: 100px;
     height: 100px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.qr-item img:hover {
+    transform: scale(2.6); /* Agranda la imagen a 260% de su tamaño original */
 }
 
 .map {

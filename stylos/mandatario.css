@@ -49,6 +49,11 @@
 .services ul li img {
     width: 350px; /* Tamaño de las imágenes */
     height: 150px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.services ul li img:hover {
+    transform: scale(1.2); /* Agranda la imagen a 120% de su tamaño original */
 }
 
 .services ul li p {

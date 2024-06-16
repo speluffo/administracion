@@ -21,6 +21,11 @@
     border: 1px solid #ddd; /* Add border around the image */
     padding: 10px; /* Add padding inside the image border */
     background-color: #fff; /* Set background color for the image */
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.services ul li img:hover {
+    transform: scale(1.3); /* Agranda la imagen a 120% de su tamaño original */
 }
 
 .services ul li div {
