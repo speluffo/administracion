@@ -4,22 +4,11 @@ body {
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
-  }
+}
 
-.video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-
-.container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+.logo-carousel {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -29,6 +18,26 @@ body {
 
 .logo img {
     width: 350px;
+}
+
+.carousel {
+    margin-left: 40px;
+    width: 1250px; /* Ajusta el ancho del carrusel */
+    overflow: hidden;
+    position: relative;
+}   
+
+.slides {
+    display: flex;
+    width: 1150px; /* Ancho total de todas las imágenes */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 1050px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: 250px; /* Ajusta el alto de las imágenes */
+    object-fit: cover; /* Para mantener la relación de aspecto */
+    display: block;
 }
 
 .menu-container {
@@ -42,30 +51,28 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    transition: transform 0.3s ease; /* Suaviza la transición */
+    transition: transform 0.3s ease;
 }
 
 nav ul:hover {
     color: #666;
-    transform: scale(1.3);/* agranda la imagen  */
+    transform: scale(1.3);
 }
-
 
 nav li {
     margin: 0 20px;
-    transition: transform 0.3s ease; /* Suaviza la transición */
+    transition: transform 0.3s ease;
 }
 
 nav li:hover {
-    transform: scale(1.2) translateY(-20px); /* Agranda y eleva el elemento */
+    transform: scale(1.2) translateY(-20px);
 }
 
-/* cambia de color el menu al pasar el mouse  */
 nav a {
     color: #333;
     text-decoration: none;
     font-size: 38px;
-    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza la transición */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
