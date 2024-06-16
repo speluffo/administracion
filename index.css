@@ -42,16 +42,30 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    transition: transform 0.3s ease; /* Suaviza la transición */
 }
+
+nav ul:hover {
+    color: #666;
+    transform: scale(1.3);/* agranda la imagen  */
+}
+
 
 nav li {
     margin: 0 20px;
+    transition: transform 0.3s ease; /* Suaviza la transición */
 }
 
+nav li:hover {
+    transform: scale(1.2) translateY(-20px); /* Agranda y eleva el elemento */
+}
+
+/* cambia de color el menu al pasar el mouse  */
 nav a {
     color: #333;
     text-decoration: none;
     font-size: 38px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza la transición */
 }
 
 nav a:hover {
@@ -81,7 +95,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-
     width: 100%;
     bottom: 0;
 }
