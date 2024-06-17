@@ -23,7 +23,7 @@
 
 .services h3 p{
     font-size: 36px;
-    color: rgb(235, 225, 225);
+    color: rgb(248, 242, 242);
     margin-bottom: 20px;
 }
 
@@ -60,9 +60,10 @@
     transform: scale(1.2); /* Agranda la imagen a 120% de su tamaño original */
 }
 
-.services ul li p {
+.services ul li p { /* Fondos de letras s */
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(22, 2, 2);
+    font-size: 48px;
 }
 
 .services ul.tramites li {
