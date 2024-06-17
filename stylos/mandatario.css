@@ -1,29 +1,33 @@
 /* mandatario.css */
-
-.services, .contact {
+.services {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.services {
     padding: 50px 20px;
     text-align: center;
 }
 
-.services h2, .contact h2 {
+.services h2{
     font-size: 36px;
     color: rgb(22, 22, 22);
     margin-bottom: 20px;
 }
 
-.services h3, .contact h3 {
+.services h3 {
     font-size: 36px;
     color: rgb(22, 22, 22);
     margin-bottom: 20px;
 }
 
-.services h3 p, .contact h3 p{
+.services h3 p{
     font-size: 36px;
     color: rgb(235, 225, 225);
     margin-bottom: 20px;
 }
 
-.services ul, .contact ul {
+.services ul{
     list-style: none;
     padding: 0;
     display: flex;
@@ -32,7 +36,7 @@
     color: rgb(51, 94, 158);
 }
 
-.services ul li, .contact ul li {
+.services ul li{
     font-size: 20px;
     margin: 10px;
     flex: 0 0 calc(25% - 20px); /* Tres columnas con margen */
@@ -82,8 +86,4 @@ footer {
     bottom: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
+

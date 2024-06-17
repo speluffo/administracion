@@ -6,26 +6,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.logo-carousel {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     align-self: flex-start;
-    margin: 10px 0;
+    margin: 2px 0;
+    width: 250px; /* Aseguramos que el logo tenga el mismo ancho en todas las páginas */
+    height: auto; /* Mantenemos la proporción del logo */
 }
 
 .logo img {
-    width: 350px;
+    width: 100%; /* Hacemos que la imagen ocupe todo el espacio del div */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
-
-.carousel {
-    margin-left: 40px;
-    width: 1250px; /* Ajusta el ancho del carrusel */
-    overflow: hidden;
-    position: relative;
-}   
 
 .slides {
     display: flex;
@@ -38,11 +29,6 @@ body {
     height: 250px; /* Ajusta el alto de las imágenes */
     object-fit: cover; /* Para mantener la relación de aspecto */
     display: block;
-}
-
-.menu-container {
-    text-align: center;
-    width: 100%;
 }
 
 nav ul {
@@ -60,7 +46,7 @@ nav ul:hover {
 }
 
 nav li {
-    margin: 0 20px;
+    margin: 0 10px;
     transition: transform 0.3s ease;
 }
 
