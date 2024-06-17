@@ -18,6 +18,18 @@ body {
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+.qr-codes {
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+}
+
+.qr-codes img {
+    width: 250px; /* Ajusta el tamaño según sea necesario */
+    height: center;
+}
+
 .slides {
     display: flex;
     width: 1150px; /* Ancho total de todas las imágenes */
