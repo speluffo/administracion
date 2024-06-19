@@ -12,22 +12,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Centra el contenido del texto dentro del contenedor */
+}
+
+
+.centered-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0; /* Añadir margen superior para separar la lista del contenido anterior */
+}
+
+.centered-content ul li {
+    margin: 5px 0; /* Añadir margen inferior entre los elementos de la lista */
 }
 
 .contact-info h1, .contact-info h2 {
     color: #f6f8f2;
 }
 
+
 .contact-info p, .contact-info li {
     font-size: 18px;
     color: #e7dada;
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Añade un espacio entre los elementos */
+    margin: 20px 0;
+}
+
+
 .contact-icon {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: #e4e1e1;
     margin: 10px 0;
 }
 
